@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z8X-C4-ypL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U2u-VZ-EGV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,25 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--PlainTextConvertor-->
         <scene sceneID="VQw-Lq-WtO">
             <objects>
-                <tableViewController id="Z8X-C4-ypL" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dmX-Yo-L4k">
+                <tableViewController id="Z8X-C4-ypL" customClass="MainTableViewController" customModule="PlainTextConv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dmX-Yo-L4k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="クリップボードの状態" id="JLN-mW-UiF">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ub5-1q-q2r" style="IBUITableViewCellStyleDefault" id="xaQ-LJ-99l">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="UW3-vD-sby" style="IBUITableViewCellStyleDefault" id="xaQ-LJ-99l">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xaQ-LJ-99l" id="44I-7b-ZgN">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="データ無し" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ub5-1q-q2r">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="テキストデータあり" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UW3-vD-sby">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -40,7 +40,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="変換-&gt;クリップボードへ出力" id="Og5-d5-h3h">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="BhM-fH-Fac" style="IBUITableViewCellStyleDefault" id="LzO-1N-ELG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="convToPlainText" textLabel="BhM-fH-Fac" style="IBUITableViewCellStyleDefault" id="LzO-1N-ELG">
                                         <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LzO-1N-ELG" id="Pug-Q0-pea">
@@ -57,7 +57,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="WJp-sO-bPf" style="IBUITableViewCellStyleDefault" id="lPQ-SN-8K8">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LFevery25characters" textLabel="WJp-sO-bPf" style="IBUITableViewCellStyleDefault" id="lPQ-SN-8K8">
                                         <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lPQ-SN-8K8" id="cfJ-5J-T6F">
@@ -74,7 +74,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mVf-er-q5l" style="IBUITableViewCellStyleDefault" id="XdL-qq-60i">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="unifyPunctuationMarks" textLabel="mVf-er-q5l" style="IBUITableViewCellStyleDefault" id="XdL-qq-60i">
                                         <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XdL-qq-60i" id="l6g-AM-Lq9">
@@ -99,10 +99,34 @@
                             <outlet property="delegate" destination="Z8X-C4-ypL" id="ung-hN-29H"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="PlainTextConvertor" id="isd-aS-U6M"/>
+                    <connections>
+                        <outlet property="convToPlainTextButton" destination="LzO-1N-ELG" id="hRx-j4-1NT"/>
+                        <outlet property="statusLabelOfPasteBoard" destination="xaQ-LJ-99l" id="c2v-sc-6PU"/>
+                        <outletCollection property="convertItems" destination="LzO-1N-ELG" collectionClass="NSMutableArray" id="ag3-mj-yNr"/>
+                        <outletCollection property="convertItems" destination="lPQ-SN-8K8" collectionClass="NSMutableArray" id="aPC-au-13p"/>
+                        <outletCollection property="convertItems" destination="XdL-qq-60i" collectionClass="NSMutableArray" id="Rha-Ka-OxW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdj-pU-iDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="105"/>
+            <point key="canvasLocation" x="169" y="72"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hHa-th-cA6">
+            <objects>
+                <navigationController id="U2u-VZ-EGV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="E84-4g-L0q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Z8X-C4-ypL" kind="relationship" relationship="rootViewController" id="S5z-l2-9pB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7K-zQ-uuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="72"/>
         </scene>
     </scenes>
 </document>
