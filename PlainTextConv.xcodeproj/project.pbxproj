@@ -10,6 +10,7 @@
 		17FCF3D304B941C7AC57ABAA /* Pods_PlainTextConvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7E68A21DD34DF075AF47FE /* Pods_PlainTextConvUITests.framework */; };
 		19A940AFF430EA32989D57D5 /* Pods_PlainTextConvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956351DE511BC6FA0D8995D3 /* Pods_PlainTextConvTests.framework */; };
 		1F50C0071EED00810033AEA7 /* TextConvertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50C0061EED00810033AEA7 /* TextConvertorTests.swift */; };
+		1F6C5E1C1EF3123A00FF74C0 /* MRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6C5E1B1EF3123A00FF74C0 /* MRuby.framework */; };
 		1F7D2E931EED2D6B007BA99B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D2E921EED2D6B007BA99B /* MainTableViewController.swift */; };
 		1F927A171EECD0EA00DBCEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F927A161EECD0EA00DBCEBD /* AppDelegate.swift */; };
 		1F927A1C1EECD0EA00DBCEBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F927A1A1EECD0EA00DBCEBD /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		06F6CD0AE65DC1515BEC4C50 /* Pods-PlainTextConv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlainTextConv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlainTextConv/Pods-PlainTextConv.debug.xcconfig"; sourceTree = "<group>"; };
 		1F50C0061EED00810033AEA7 /* TextConvertorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConvertorTests.swift; sourceTree = "<group>"; };
+		1F6C5E1B1EF3123A00FF74C0 /* MRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MRuby.framework; sourceTree = "<group>"; };
 		1F7D2E921EED2D6B007BA99B /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = PlainTextConv/MainTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		1F927A131EECD0EA00DBCEBD /* PlainTextConv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainTextConv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F927A161EECD0EA00DBCEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6C5E1C1EF3123A00FF74C0 /* MRuby.framework in Frameworks */,
 				B6872591F553C51591693109 /* Pods_PlainTextConv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +176,7 @@
 		4741195A5A2B6DA25B81BB95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F6C5E1B1EF3123A00FF74C0 /* MRuby.framework */,
 				CCEA44569B37A5967023BCFC /* Pods_PlainTextConv.framework */,
 				956351DE511BC6FA0D8995D3 /* Pods_PlainTextConvTests.framework */,
 				AC7E68A21DD34DF075AF47FE /* Pods_PlainTextConvUITests.framework */,
@@ -623,6 +627,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MBV27Y257Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlainTextConv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ysake.PlainTextConv;
@@ -637,6 +645,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MBV27Y257Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlainTextConv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ysake.PlainTextConv;
